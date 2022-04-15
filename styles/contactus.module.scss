@@ -1,0 +1,52 @@
+// .contactus {
+.container {
+  height: 60vh;
+  background: url("/assets/contact_us.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper {
+    // background: rgba(0, 0, 0, 0.121);
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // padding-top: 3%;
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.30000001192092896px;
+        text-align: center;
+        color: #64626a;
+      }
+      h1 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 55px;
+        letter-spacing: 0.800000011920929px;
+        text-align: center;
+        margin: 30px;
+      }
+      .button {
+        text-align: center;
+        // background: blue;
+        width: 20%;
+        background: #5b45e0;
+        border: none;
+        border-radius: 0.5rem;
+        color: white;
+        cursor: pointer;
+        padding: 15px 0;
+      }
+    }
+  }
+}

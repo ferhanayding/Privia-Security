@@ -1,0 +1,92 @@
+.container {
+  padding: 5% 22%;
+
+  .wrapper {
+    .item__container {
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        background: transparent;
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        &.arrow__next {
+          transform: translateY(-50%) rotate(180deg);
+          right: -6rem;
+        }
+        &.arrow__prev {
+          transform: translateY(-50%);
+          left: -6rem;
+        }
+        &:hover {
+          background: rgba(153, 153, 153, 0.29);
+        }
+      }
+      .card {
+        padding: 5%;
+        border: 1px #d1d0d6 solid;
+        border-radius: 0.6rem;
+
+        img {
+        }
+        p {
+          margin: 1.5rem 0;
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 42px;
+          letter-spacing: 0.5333333611488342px;
+          text-align: left;
+        }
+        .user__container {
+          display: flex;
+          align-items: center;
+
+          .img__container {
+            margin-right: 5px;
+            img {
+              height: 48px;
+              width: 48px;
+            }
+          }
+          .user__info {
+            padding: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h4 {
+              font-size: 18px;
+              font-weight: 700;
+              margin-bottom: 5px;
+              line-height: 21px;
+              letter-spacing: 0.30000001192092896px;
+              text-align: left;
+            }
+            span {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 16px;
+              letter-spacing: 0.20000000298023224px;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+    .info__container {
+      padding: 5% 5%;
+      // background-color: #d1d0d6;
+      .info__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        // background: #333;
+      }
+    }
+  }
+}

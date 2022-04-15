@@ -1,0 +1,21 @@
+.container{
+ padding: 0 10%; 
+ margin-bottom: 30px;    
+ p{
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: center;
+    
+ } 
+ .items{
+    margin-top: 70px;
+     display: flex;
+     justify-content: space-between;
+     img{
+         height: 1.5rem;
+     }
+ }
+}

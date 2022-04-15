@@ -1,0 +1,71 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+#yellowbg {
+  background: #ffedb6;
+}
+#blueicebg {
+  background: #d1e8ff;
+}
+#bluebg {
+  background: #5b45e0;
+}
+#one {
+  color: #edb300;
+}
+#second {
+  color: #49a4ff;
+}
+#third {
+  color: white;
+}
+#white {
+  color: white;
+}
+// responsive
+$big-tablet-width: 1200px;
+$responsive-width: 768px;
+$mobile-width: 480px;
+@mixin bigTablet {
+  @media only screen and  (max-width: #{$big-tablet-width}) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media only screen and (max-width: #{$responsive-width}) {
+    @content;
+  }
+}
+@mixin mobileSmall {
+  @media only screen and(max-width:#{$mobile-width}) {
+    @content;
+  }
+}

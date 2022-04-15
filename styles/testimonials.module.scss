@@ -1,0 +1,87 @@
+.container{
+    padding:  10%;
+    padding-top: 5%;
+    padding-bottom: 0;
+    .wrapper{
+        display: flex;
+       .card{
+           padding: 5%;
+           border: 1px #D1D0D6 solid;
+           border-radius: 0.6rem;
+     
+        img{ 
+        }
+        p{
+            margin: 1.5rem 0;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 34px;
+            letter-spacing: 0.4000000059604645px;
+            text-align: left;
+
+        }
+          .user__container{
+           display: flex;
+           align-items: center;
+
+             .img__container{
+                    margin-right: 5px;
+                 img{
+                  height: 48px;
+                  width: 48px;  
+                }
+             } 
+             .user__info{
+                 padding: 3px;
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: space-between;
+                h4{
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 5px;
+                line-height: 21px;
+                letter-spacing: 0.30000001192092896px;
+                text-align: left;
+
+                }
+                span{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0.20000000298023224px;
+                text-align: left;
+
+                }
+             }
+          } 
+       } 
+    }
+    .link__btn{
+        margin-top: 50px;
+       display: flex;
+       justify-content: center;
+        button{
+            border: none;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            
+            cursor: pointer;
+            &:hover{
+                span{
+                    text-decoration: underline;
+                }
+            }
+            span{
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0px;
+            margin-right: 5px; 
+            color: #5B45E0;
+
+            }
+        }
+    }
+}

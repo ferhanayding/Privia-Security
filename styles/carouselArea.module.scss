@@ -1,0 +1,52 @@
+.carousel__area {
+  position: relative;
+
+  background: #ffedb6;
+  .container {
+    background: url("/assets/Base.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 5% 10%;
+    .wrapper {
+      border-radius: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background: #50b6ff3b;
+      padding: 2%;
+      .item {
+        border-radius: 15px;
+        width: 30%;
+        background: #fdfdfd;
+        padding: 3%;
+        .item__top {
+          display: flex;
+          align-items: center;
+
+          img {
+            margin-right: 10px;
+            height: 20px;
+            width: 16px;
+          }
+          span {
+            color: #3b3a40;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0.44999998807907104px;
+            text-align: left;
+          }
+        }
+        p {
+          margin: 15px 0;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+          letter-spacing: 0.20000000298023224px;
+          text-align: left;
+          color: #64626a;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+$big-width: 1350px;
+$tablet-width: 1200px;
+$medium-width: 950px;
+$big-mobile-width: 768px;
+$mobile-width: 480px;
+
+@mixin Big {
+  @media only screen and  (max-width: #{$big-width}) {
+    @content;
+  }
+}
+@mixin Tablet {
+  @media only screen and  (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+@mixin medium {
+  @media only screen and (max-width: #{$medium-width}) {
+    @content;
+  }
+}
+@mixin bigMobile {
+  @media only screen and(max-width:#{$big-mobile-width}) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media only screen and(max-width:#{$mobile-width}) {
+    @content;
+  }
+}
+// html {
+//   font-size: 100%;
+//   line-height: 100%;
+
+//   @include Big {
+//     font-size: 90%;
+//     line-height: 90%;
+//   }
+//   @include Tablet {
+//     font-size: 80%;
+//     line-height: 70%;
+//   }
+//   @include medium {
+//     font-size: 70%;
+//     line-height: 50%;
+//   }
+//   @include bigMobile {
+//     font-size: 65%;
+//     line-height: 40%;
+//   }
+//   @include mobile {
+//     font-size: 60%;
+//     line-height: 30%;
+//   }
+// }
+// responsive

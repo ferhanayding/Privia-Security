@@ -12,16 +12,24 @@ import {
   right_start,
   open,
   closed,
+  menu__container,
   dropdown__menu,
   drowdown__menu_items,
   drowdown__menu_item,
   center__items,
   hr,
   scroll,
+  active__menu,
   center__item,
+  hamburger__menu,
   active__item,
 } from "../../styles/navbar.module.scss";
-const Navbar = () => {
+const Navbar = ({ menuState, setMenuState }) => {
+  console.log(menuState);
+  // const f = () => {
+  //   menuState ? console.log("ded") : console.log("dfada");
+  // };
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   const [dropdown, setDropdown] = useState(false);
@@ -33,15 +41,28 @@ const Navbar = () => {
       return closed;
     }
   };
+  console.log(menuState);
   useEffect(() => {
     window.onscroll = () => {
       setIsScrolled(window.pageYOffset === 0 ? false : true);
     };
   }, [isScrolled]);
+  const onClickHandler = () => {
+    setMenuState(!menuState);
+  };
   return (
     <div className={[container, isScrolled ? scroll : ""].join(" ")}>
       <div className={wrapper}>
         <div className={left}>
+          <div
+            className={[hamburger__menu, menuState && active__menu].join(" ")}
+          >
+            <div className={menu__container} onClick={onClickHandler}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
           <div className={imgContainer}>
             <Link href="/">
               <a>

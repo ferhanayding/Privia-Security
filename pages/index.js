@@ -9,11 +9,14 @@ import Info from "../components/info/Info";
 import More from "../components/more/More";
 import Pricing from "../components/pricing/Pricing";
 import Testimonails from "../components/testimonails/Testimonails";
-import styles from "../styles/Home.module.scss";
+import { container, opacity } from "../styles/Home.module.scss";
 
-export default function Home() {
+export default function Home({ menuState, setMenuState }) {
   return (
-    <div className={styles.container}>
+    <div
+      className={[container, menuState && opacity].join(" ")}
+      onClick={() => setMenuState(false)}
+    >
       <Head>
         <title>Privia Hub</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,7 +37,6 @@ export default function Home() {
       <Info />
       <Testimonails />
       <Pricing />
-
       <Hr />
     </div>
   );

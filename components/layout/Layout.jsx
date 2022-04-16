@@ -1,15 +1,16 @@
-import React from 'react'
-import Footer from '../footer/Footer'
-import Navbar from '../navbar/Navbar'
+import React from "react";
+import Footer from "../footer/Footer";
+import MenuForResponsive from "../menuForResponsive/MenuForResponsive";
+import Navbar from "../navbar/Navbar";
 
-const Layout = ({children}) => {
+const Layout = ({ children, menuState, setMenuState }) => {
   return (
     <>
-    <Navbar/>
-    {children}
-    <Footer/>
+      <Navbar menuState={menuState} setMenuState={setMenuState} />
+      {children}
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

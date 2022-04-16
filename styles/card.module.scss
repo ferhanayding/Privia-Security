@@ -5,8 +5,9 @@
   padding: 5% 15%;
   //   height: 100Ss%;
   display: flex;
-  height: 400px;
+  // height: 400px;
   justify-content: center;
+
   .wrapper {
     // background: #000;
     width: 100%;
@@ -21,15 +22,18 @@
       justify-content: center;
 
       h1 {
-        font-size: 48px;
+        font-size: 3rem;
         font-weight: 700;
-        line-height: 55px;
+        line-height: 3rem;
         letter-spacing: 0.800000011920929px;
         text-align: left;
+        // @media screen and(max-width:1361px) {
+        //   // font-size: 2rem;
+        // }
       }
       p {
         margin-top: 20px;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 400;
         line-height: 26px;
         letter-spacing: 0.20000000298023224px;

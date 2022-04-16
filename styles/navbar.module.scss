@@ -1,15 +1,25 @@
 @import "../styles/colors.scss";
+@import "./app.module.scss";
 .container {
   z-index: 999;
-  padding: 20px 10%;
+  padding: 3% 10%;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  width: 100vw;
   max-height: 80px;
   display: flex;
   align-items: center;
   background-color: transparent;
+  transition: all 1s ease;
+  @include Tablet {
+    padding-inline: 3%;
+  }
+  @include medium {
+    max-height: 60px;
+  }
+
   &.scroll {
     background: #d1e8ff;
   }
@@ -23,18 +33,70 @@
       flex: 1;
       display: flex;
       align-items: center;
+      max-width: 303px;
       .imgContainer {
         width: 145px;
         height: 41px;
+        @include medium {
+          display: none;
+        }
         img {
           cursor: pointer;
           object-fit: contain;
+        }
+      }
+      // responsive
+      .hamburger__menu {
+        display: none;
+        @include medium {
+          // transition: all 1s ease;
+          display: flex;
+        }
+        height: 100%;
+        width: 100%;
+        justify-content: flex-start;
+        .menu__container {
+          // background: blue;
+          display: flex;
+          width: 15%;
+          height: 100%;
+          align-items: center;
+          flex-direction: column;
+          justify-content: space-evenly;
+        }
+        // justify-content: flex-start;
+
+        span {
+          transition: all 1s ease-in-out;
+          height: 4px;
+          min-height: 2px;
+          width: 100%;
+          background: #232e69;
+          transform-origin: 20%;
+        }
+        &.active__menu {
+          .menu__container {
+            span {
+              &:first-child {
+                transform: rotate(45deg);
+              }
+              &:nth-child(2) {
+                opacity: 0;
+              }
+              &:last-child {
+                transform: rotate(-45deg);
+              }
+            }
+          }
         }
       }
     }
     .center {
       flex: 2;
       display: flex;
+      @include medium {
+        display: none;
+      }
       align-items: center;
       .center__items {
         display: flex;
@@ -133,6 +195,8 @@
       flex: 1;
       display: flex;
       align-items: center;
+      max-width: 303px;
+      // height: 100%;
       justify-content: flex-end;
       .right__wrapper {
         display: flex;
@@ -140,6 +204,7 @@
         justify-content: space-between;
 
         height: 38px;
+        // height: 100%;
         .right_login {
           border: none;
           cursor: pointer;
@@ -147,10 +212,15 @@
           padding: 4px;
           transition: all 0.5s ease;
           border-radius: 5px;
-          font-family: Ubuntu;
           font-size: 14px;
           font-weight: 400;
           line-height: 16px;
+          @include Tablet {
+            font-size: 12px;
+          }
+          @include mobile {
+            font-size: 50%;
+          }
           letter-spacing: 0.20000000298023224px;
 
           &:hover {
@@ -169,6 +239,19 @@
           font-weight: 700;
           box-shadow: 0px -2px 0px 0px #00000014 inset;
           transition: 1s ease;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @include Tablet {
+            font-size: 12px;
+            height: 80%;
+            width: 100px;
+          }
+          @include mobile {
+            font-size: 50%;
+            height: 70%;
+            width: 60%;
+          }
           &:hover {
           }
         }

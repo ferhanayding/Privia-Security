@@ -17,7 +17,7 @@ const More = () => {
         <div className={top}>
           <SectionTitle sectionTitle="More Feature" />
           <p className={desc}>
-            We're more than an analytic <br /> tool. Explore our features, and{" "}
+            We're more than an analytic <br /> tool. Explore our features, and
             <br /> satisfy your customers
           </p>
         </div>

@@ -1,10 +1,10 @@
-.card__img_container{
-    height: 64px;
-    width: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img{
-        
-    }
-     }
+@import "./app.module.scss";
+.card__img_container {
+  height: 64px;
+  width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+  }
+}

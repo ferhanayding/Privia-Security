@@ -69,7 +69,7 @@ const Sliders = () => {
                     <img src={item.avatar} alt="" />
                   </div>
                   <div className={user__info}>
-                    <h4>{item.username} </h4>
+                    <h4>{item.username}</h4>
                     <span>{item.userJobTitle} </span>
                   </div>
                 </div>

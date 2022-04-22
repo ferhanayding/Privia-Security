@@ -54,9 +54,7 @@ const Navbar = ({ menuState, setMenuState }) => {
     <div className={[container, isScrolled ? scroll : ""].join(" ")}>
       <div className={wrapper}>
         <div className={left}>
-          <div
-            className={[hamburger__menu, menuState && active__menu].join(" ")}
-          >
+          <div className={hamburger__menu}>
             <div className={menu__container} onClick={onClickHandler}>
               <span></span>
               <span></span>

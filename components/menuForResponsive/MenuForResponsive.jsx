@@ -8,9 +8,11 @@ import {
 const MenuForResponsive = ({ menuState, setMenuState }) => {
   console.log(menuState);
   return (
-    <div className={[container, menuState && active].join(" ")}>
+    // <div className={[container, menuState && active].join(" ")}>
+    <div className={`${container} ${menuState && active}`}>
       <div className={wrapper}>
         <ul>
+          <span onClick={() => setMenuState(false)}>X</span>
           <Link href="/">
             <a onClick={() => setMenuState(false)}>
               <li>Home</li>

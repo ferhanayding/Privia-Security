@@ -20,7 +20,7 @@ export default function Home({ menuState, setMenuState }) {
       <Head>
         <title>Privia Hub</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Ubuntu:wght@400;700&display=swap"
           rel="stylesheet"

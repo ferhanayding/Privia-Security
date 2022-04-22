@@ -3,8 +3,6 @@ import {
   container,
   wrapper,
   content,
-  title__container,
-  title,
   desc__container,
   left__desc,
   right__desc,
@@ -14,7 +12,6 @@ import {
   card__right_container,
   card__title,
   card__desc,
-  card__btn,
 } from "../../styles/featured.module.scss";
 import featured from "../../dummyData/featured";
 import SectionTitle from "../sectionTitle/SectionTitle";
@@ -26,11 +23,13 @@ const Featured = () => {
         <SectionTitle sectionTitle={"Features"} />
         <div className={content}>
           <div className={desc__container}>
-            <h3 className={left__desc}>Our solution for your business</h3>
+            <h3 className={left__desc}>
+              Our solution for your <business></business>
+            </h3>
             <p className={right__desc}>
-              We are self-service data analytics software that <br /> lets you
-              create visually appealing data <br /> visualizations and
-              insightful dashboards in minutes.
+              We are self-service data analytics software that lets you create
+              visually appealing data visualizations and insightful dashboards
+              in minutes.
             </p>
           </div>
           <div className={cards__container}>

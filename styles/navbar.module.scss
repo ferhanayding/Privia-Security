@@ -49,30 +49,26 @@
       .hamburger__menu {
         display: none;
         @include medium {
-          // transition: all 1s ease;
           display: flex;
         }
         height: 100%;
         width: 100%;
         justify-content: flex-start;
         .menu__container {
-          // background: blue;
           display: flex;
-          width: 15%;
+          width: 10%;
           height: 100%;
           align-items: center;
           flex-direction: column;
           justify-content: space-evenly;
         }
-        // justify-content: flex-start;
-
         span {
-          transition: all 1s ease-in-out;
-          height: 4px;
+          transition: all 0.5s ease-in-out;
+          height: 3px;
           min-height: 2px;
           width: 100%;
           background: #232e69;
-          transform-origin: 20%;
+          transform-origin: 5%;
         }
         &.active__menu {
           .menu__container {

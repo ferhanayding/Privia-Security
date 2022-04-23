@@ -35,7 +35,7 @@ export default function Home({ menuState, setMenuState }) {
       <More />
       <Collaborate />
       <Info />
-      <Testimonails />
+      {/* <Testimonails /> */}
       <Pricing />
       <Hr />
     </div>

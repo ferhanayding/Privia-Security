@@ -29,29 +29,3 @@ $mobile-width: 480px;
     @content;
   }
 }
-// html {
-//   font-size: 100%;
-//   line-height: 100%;
-
-//   @include Big {
-//     font-size: 90%;
-//     line-height: 90%;
-//   }
-//   @include Tablet {
-//     font-size: 80%;
-//     line-height: 70%;
-//   }
-//   @include medium {
-//     font-size: 70%;
-//     line-height: 50%;
-//   }
-//   @include bigMobile {
-//     font-size: 65%;
-//     line-height: 40%;
-//   }
-//   @include mobile {
-//     font-size: 60%;
-//     line-height: 30%;
-//   }
-// }
-// responsive

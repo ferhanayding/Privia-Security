@@ -23,9 +23,7 @@ const Featured = () => {
         <SectionTitle sectionTitle={"Features"} />
         <div className={content}>
           <div className={desc__container}>
-            <h3 className={left__desc}>
-              Our solution for your <business></business>
-            </h3>
+            <h3 className={left__desc}>Our solution for your bussiness</h3>
             <p className={right__desc}>
               We are self-service data analytics software that lets you create
               visually appealing data visualizations and insightful dashboards

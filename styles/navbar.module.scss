@@ -48,8 +48,11 @@
       // responsive
       .hamburger__menu {
         display: none;
+
+        // background: #000;
         @include medium {
           display: flex;
+          align-items: center;
         }
         height: 100%;
         width: 100%;
@@ -57,10 +60,13 @@
         .menu__container {
           display: flex;
           width: 10%;
-          height: 100%;
+          height: 80%;
           align-items: center;
           flex-direction: column;
           justify-content: space-evenly;
+          @include mobile {
+            height: 70%;
+          }
         }
         span {
           transition: all 0.5s ease-in-out;
@@ -68,21 +74,8 @@
           min-height: 2px;
           width: 100%;
           background: #232e69;
-          transform-origin: 5%;
-        }
-        &.active__menu {
-          .menu__container {
-            span {
-              &:first-child {
-                transform: rotate(45deg);
-              }
-              &:nth-child(2) {
-                opacity: 0;
-              }
-              &:last-child {
-                transform: rotate(-45deg);
-              }
-            }
+          @include mobile {
+            height: 2px;
           }
         }
       }

@@ -6,7 +6,6 @@ import {
   desc,
   card,
   bottom,
-  card__img_container,
 } from "../../styles/more.module.scss";
 import Oval from "../oval/Oval";
 import SectionTitle from "../sectionTitle/SectionTitle";

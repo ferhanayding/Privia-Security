@@ -48,6 +48,13 @@
           @include Tablet {
             text-align: center;
           }
+          @include mobile {
+            font-size: 30px;
+            line-height: 40px;
+            br {
+              display: none;
+            }
+          }
         }
         p {
           font-size: 18px;
@@ -59,6 +66,13 @@
             text-align: center;
             font-size: 14px;
           }
+          @include mobile {
+            font-size: 12px;
+            line-height: 22px;
+            br {
+              display: none;
+            }
+          }
         }
       }
       .bottom {
@@ -67,9 +81,13 @@
         align-items: center;
         justify-content: space-between;
         max-width: 80%;
+        // background: #000;
         @include Tablet {
           justify-content: none;
           width: 50%;
+        }
+        @include mobile {
+          width: 100%;
         }
         // background: blue;
         .item {
@@ -84,6 +102,9 @@
           }
           @include medium {
             width: 100%;
+            // background: #000;
+          }
+          @include mobile {
           }
           img {
             margin-right: 5px;
@@ -97,6 +118,9 @@
             letter-spacing: 0.30000001192092896px;
             text-align: left;
             @include Big {
+              font-size: 14px;
+            }
+            @include mobile {
               font-size: 14px;
             }
           }

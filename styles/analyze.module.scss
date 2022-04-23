@@ -1,6 +1,7 @@
 @import "./app.module.scss";
 .container {
   padding: 10%;
+  margin-block: 50px;
   @include Big {
     padding: 5%;
   }
@@ -37,6 +38,13 @@
           @include Tablet {
             text-align: center;
           }
+          @include mobile {
+            font-size: 34px;
+            line-height: 45px;
+            br {
+              display: none;
+            }
+          }
         }
         .desc__parag {
           font-size: 18px;
@@ -47,6 +55,12 @@
           margin-bottom: 0;
           @include Tablet {
             text-align: center;
+          }
+          @include mobile {
+            font-size: 16px;
+            br {
+              display: none;
+            }
           }
         }
       }

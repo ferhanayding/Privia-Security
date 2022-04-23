@@ -4,7 +4,6 @@ import {
   container,
   wrapper,
   content,
-  container__img,
   heroSection__title,
   herosection__desc,
   heroSection__btns,

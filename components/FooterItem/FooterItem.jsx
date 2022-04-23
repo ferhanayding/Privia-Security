@@ -1,30 +1,48 @@
-import React from 'react'
+import React, { useState } from "react";
 import {
-container,
-name,
-items__container,
-items__wrapper,
-link
-} from "../../styles/footerItem.module.scss"
-const FooterItem = ({title,links}) => {
+  container,
+  name,
+  items__container,
+  items__wrapper,
+  link,
+  title__container,
+  activeWrapper,
+  pasive,
+} from "../../styles/footerItem.module.scss";
+const FooterItem = ({ title, links, index }) => {
+  const [selected, setSelected] = useState(null);
+  const handleClick = (index) => {
+    if (selected == index) {
+      return setSelected(null);
+    }
+
+    setSelected(index);
+  };
+  console.log(selected);
   return (
     <div className={container}>
-        <h4 className={name} >
-        {title}
-        </h4>
-        <div className={items__container} >
-        <ul className={items__wrapper}>
-            {
-                links.map((item,index)=>(
-                    <li className={link} key={index} >
-                        {item.title}
-                    </li>
-                ))
-            }
-        </ul>
-        </div>
-    </div>
-  )
-}
+      <div className={title__container} onClick={() => handleClick(index)}>
+        <h4 className={name}>{title}</h4>
+        <img
+          src="/assets/ArrowIcon.svg"
+          //   style={{ `${selected == index && animation : "none"}`   }}
 
-export default FooterItem
+          alt=""
+        />
+      </div>
+      <div className={items__container}>
+        <ul
+          className={`${items__wrapper} ${selected == index && activeWrapper}`}
+        >
+          {links.map((item, i) => (
+            <li className={link} key={i}>
+              {item.title}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default FooterItem;

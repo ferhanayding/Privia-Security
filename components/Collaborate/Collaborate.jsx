@@ -35,19 +35,19 @@ const Collaborate = () => {
             </div>
             <div className={item}>
               <img src="/assets/success.svg" alt="" />
-              <span>Organize your data</span>
+              <span>Always in sync</span>
             </div>
             <div className={item}>
               <img src="/assets/success.svg" alt="" />
-              <span>Organize your data</span>
+              <span>Work with any team</span>
             </div>
             <div className={item}>
               <img src="/assets/success.svg" alt="" />
-              <span>Organize your data</span>
+              <span>Embedded analytics</span>
             </div>
             <div className={item}>
               <img src="/assets/success.svg" alt="" />
-              <span>Organize your data</span>
+              <span>Business analytics</span>
             </div>
           </div>
         </div>

@@ -1,9 +1,18 @@
 @import "./app.module.scss";
 .container {
-  padding: 5% 22%;
-
+  padding: 5% 16%;
+  @include medium {
+    padding: 5% 10%;
+  }
+  @include bigMobile {
+    padding: 5% 6%;
+  }
   .wrapper {
     .item__container {
+      @include medium {
+        width: 100%;
+        // background: #000;
+      }
       button {
         display: flex;
         align-items: center;
@@ -16,6 +25,9 @@
         top: 50%;
         cursor: pointer;
         transition: all 0.5s ease;
+        @include medium {
+          display: none;
+        }
         &.arrow__next {
           transform: translateY(-50%) rotate(180deg);
           right: -6rem;
@@ -34,6 +46,15 @@
         border-radius: 0.6rem;
 
         img {
+          @include medium {
+            width: 100px;
+          }
+          @include bigMobile {
+            width: 80px;
+          }
+          @include mobile {
+            width: 60px;
+          }
         }
         p {
           margin: 1.5rem 0;
@@ -42,6 +63,17 @@
           line-height: 42px;
           letter-spacing: 0.5333333611488342px;
           text-align: left;
+          @include medium {
+            font-size: 27px;
+          }
+          @include bigMobile {
+            font-size: 20px;
+            line-height: 33px;
+          }
+          @include mobile {
+            font-size: 14px;
+            line-height: 26px;
+          }
         }
         .user__container {
           display: flex;
@@ -66,6 +98,16 @@
               line-height: 21px;
               letter-spacing: 0.30000001192092896px;
               text-align: left;
+              @include medium {
+                font-size: 16px;
+              }
+              @include bigMobile {
+                font-size: 14px;
+                // line-height: 33px;
+              }
+              @include mobile {
+                font-size: 12px;
+              }
             }
             span {
               font-size: 14px;

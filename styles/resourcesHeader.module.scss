@@ -12,13 +12,25 @@
     width: 60%;
     height: 100%;
     p {
-      width: 100%;
+      width: 10%;
       font-size: 48px;
       font-weight: 700;
       line-height: 55px;
       letter-spacing: 0.800000011920929px;
       text-align: center;
       color: #6d560e;
+      @include medium {
+        font-size: 40px;
+        line-height: 45px;
+      }
+      @include bigMobile {
+        font-size: 35px;
+        line-height: 40px;
+      }
+      @include mobile {
+        font-size: 30px;
+        line-height: 35px;
+      }
     }
     .input__container {
       width: 75%;

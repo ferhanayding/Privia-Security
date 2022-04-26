@@ -9,13 +9,34 @@
       margin: 50px auto;
       //   text-align: center;
       //   background: green;
-      width: 60%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
       p {
+        width: 60%;
+        // background: #000;
+        // justify-items: center;
         font-size: 48px;
         font-weight: 700;
         line-height: 55px;
         letter-spacing: 0.800000011920929px;
         text-align: center;
+        @include Tablet {
+          width: 80%;
+        }
+        @include medium {
+          font-size: 40px;
+          width: 100%;
+          line-height: 44px;
+        }
+        @include bigMobile {
+          font-size: 34px;
+          line-height: 33px;
+        }
+        @include mobile {
+          font-size: 25px;
+          line-height: 32px;
+        }
       }
     }
     .card {
@@ -24,6 +45,9 @@
       display: flex;
       padding: 2%;
       align-items: center;
+      @include bigMobile {
+        flex-direction: column;
+      }
       &:not(:last-child) {
         margin-bottom: 30px;
       }
@@ -34,6 +58,12 @@
       .right {
         // background-color: #d1d0d6;
         padding: 3%;
+        @include bigMobile {
+          width: 100%;
+          // background: #000;
+          display: flex;
+          flex-direction: column;
+        }
         h1 {
           font-size: 24px;
           font-weight: 700;
@@ -41,6 +71,13 @@
           letter-spacing: 0.44999998807907104px;
           text-align: left;
           color: #3b3a40;
+          @include medium {
+            font-size: 18px;
+            line-height: 24px;
+          }
+          @include bigMobile {
+            text-align: center;
+          }
         }
         p {
           font-size: 16px;
@@ -50,6 +87,13 @@
           text-align: left;
           color: #64626a;
           margin: 10px 0;
+          @include medium {
+            font-size: 14px;
+            line-height: 20px;
+          }
+          @include bigMobile {
+            text-align: center;
+          }
         }
         span {
           font-size: 14px;
@@ -58,6 +102,15 @@
           letter-spacing: 0.14000000059604645px;
           text-align: left;
           color: #8e8c95;
+          // background: #000;
+          @include medium {
+            font-size: 10px;
+            line-height: 14px;
+          }
+          @include bigMobile {
+            text-align: center;
+            width: 100%;
+          }
         }
       }
     }

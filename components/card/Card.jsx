@@ -21,8 +21,7 @@ const Card = ({ bg = "#ffedb6" }) => {
         <div className={left}>
           <h1>Your next successful business starts now</h1>
           <p>
-            Join with more than 1.8 million people across 50,000 companies.{" "}
-            <br />
+            Join with more than 1.8 million people across 50,000 companies.
             30-day free trial, cancel any time. No credit card required.
           </p>
         </div>

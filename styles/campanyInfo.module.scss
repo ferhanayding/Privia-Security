@@ -13,23 +13,49 @@
         letter-spacing: 0.800000011920929px;
         text-align: left;
         margin-top: 10px;
+        @include medium {
+          width: 100%;
+          text-align: center;
+          font-size: 40px;
+          line-height: 50px;
+        }
+        @include medium {
+          font-size: 35px;
+          line-height: 40px;
+          font-weight: 600;
+        }
       }
     }
     .bottom {
       .card__container {
-        display: flex;
         width: 100%;
+        display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        @media screen and (max-width: 652px) {
+          // justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+
         .card {
-          //   flex: 0.8;
           width: 30%;
+          min-width: 250px;
+          @include medium {
+            margin-bottom: 10%;
+          }
           h2 {
             font-size: 18px;
             font-weight: 700;
             line-height: 21px;
             letter-spacing: 0.3375000059604645px;
             text-align: left;
+            @include Tablet {
+              font-size: 16px;
+            }
+            @include medium {
+              font-size: 15px;
+            }
           }
           .hr {
             height: 4px;
@@ -37,6 +63,7 @@
             margin-block: 12px;
             top: 33px;
             border-radius: 3px;
+            width: 100%;
           }
           .desc__container {
             padding-inline: 6%;
@@ -47,9 +74,20 @@
               line-height: 26px;
               letter-spacing: 0.23999999463558197px;
               text-align: left;
-
+              @include Tablet {
+                font-size: 14px;
+              }
+              @include medium {
+                font-size: 13px;
+              }
               &:first-child {
                 margin-bottom: 10px;
+                @include medium {
+                  margin-bottom: 6px;
+                }
+                @include mobile {
+                  margin-bottom: 4px;
+                }
               }
               &:last-child {
               }

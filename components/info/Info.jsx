@@ -12,7 +12,6 @@ import Slider from "react-slick/lib/slider";
 const Info = () => {
   const settings = {
     dots: false,
-    infinite: true,
     speed: 500,
     arrows: false,
     slidesToShow: 6,

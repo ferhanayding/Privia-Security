@@ -18,7 +18,6 @@ import {
   money__text,
   button__start,
   hr,
-  third__m,
 } from "../../styles/pricing.module.scss";
 const Pricing = () => {
   const [buttonState, setbuttonState] = useState(false);

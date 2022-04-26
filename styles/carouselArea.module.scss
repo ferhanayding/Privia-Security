@@ -1,13 +1,14 @@
 @import "./app.module.scss";
 .carousel__area {
   position: relative;
-
   background: #ffedb6;
   .container {
-    background: url("/assets/Base.png");
+    background: url("/assets/Base.png") white;
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 5% 10%;
+    min-height: min-content;
+
     .wrapper {
       border-radius: 15px;
       display: flex;
@@ -15,10 +16,16 @@
       justify-content: space-between;
       background: #50b6ff3b;
       padding: 2%;
+      @include bigMobile {
+        justify-content: center;
+      }
       .item {
+        margin: 5px;
         border-radius: 15px;
         width: 30%;
+        min-width: 180px;
         background: #fdfdfd;
+
         padding: 3%;
         .item__top {
           display: flex;
@@ -38,7 +45,9 @@
             text-align: left;
           }
         }
+
         p {
+          align-content: flex-start;
           margin: 15px 0;
           font-size: 16px;
           font-weight: 400;
@@ -46,7 +55,17 @@
           letter-spacing: 0.20000000298023224px;
           text-align: left;
           color: #64626a;
+          // margin-bottom: 30px;
+          &:nth-child(3) {
+            margin-bottom: 0;
+          }
         }
+        span {
+          // background: #000;
+          display: flex;
+          align-items: center;
+        }
+        // }
       }
     }
   }

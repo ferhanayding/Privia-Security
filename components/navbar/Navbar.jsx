@@ -29,7 +29,7 @@ const Navbar = ({ menuState, setMenuState }) => {
   //   menuState ? console.log("ded") : console.log("dfada");
   // };
 
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState();
 
   const [dropdown, setDropdown] = useState(false);
 

@@ -15,6 +15,7 @@ import {
   info__wrapper,
 } from "../../styles/sliders.module.scss";
 import testimonials from "../../dummyData/testimonials";
+// dotsda kLDIN
 function NextArrow(props) {
   const { onClick } = props;
   return (
@@ -37,10 +38,31 @@ const Sliders = () => {
     dots: false,
     infinite: true,
     speed: 500,
+    arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
+    cssEase: "linear",
     prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 950,
+        settings: {
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {},
+      },
+    ],
   };
   return (
     <>

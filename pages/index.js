@@ -9,14 +9,13 @@ import Info from "../components/info/Info";
 import More from "../components/more/More";
 import Pricing from "../components/pricing/Pricing";
 import Testimonails from "../components/testimonails/Testimonails";
-import { container, opacity } from "../styles/Home.module.scss";
+import { useWindowWidth } from "@react-hook/window-size";
+import Sliders from "../components/sliders/Sliders";
 
-export default function Home({ menuState, setMenuState }) {
+export default function Home() {
+  const windowWidth = useWindowWidth();
   return (
-    <div
-      className={[container, menuState && opacity].join(" ")}
-      onClick={() => setMenuState(false)}
-    >
+    <div>
       <Head>
         <title>Privia Hub</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,7 +34,7 @@ export default function Home({ menuState, setMenuState }) {
       <More />
       <Collaborate />
       <Info />
-      {/* <Testimonails /> */}
+      {windowWidth < 770 ? <Sliders /> : <Testimonails />}
       <Pricing />
       <Hr />
     </div>

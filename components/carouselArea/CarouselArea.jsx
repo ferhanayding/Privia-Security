@@ -5,7 +5,7 @@ import {
   item,
   carousel__area,
   item__top,
-  item__bottom,
+  learnmore,
 } from "../../styles/carouselArea.module.scss";
 import LearnMore from "../learnMore/LearnMore";
 const CarouselArea = () => {
@@ -22,7 +22,9 @@ const CarouselArea = () => {
               Our best tips for launching and growing your creative business
               online.
             </p>
-            <LearnMore />
+            <span className={learnmore}>
+              <LearnMore />
+            </span>
           </div>
           <div className={item}>
             <div className={item__top}>
@@ -33,7 +35,9 @@ const CarouselArea = () => {
               Everything you need to know to create your online course or
               membership.
             </p>
-            <LearnMore />
+            <span className={learnmore}>
+              <LearnMore />
+            </span>
           </div>
           <div className={item}>
             <div className={item__top}>
@@ -44,7 +48,7 @@ const CarouselArea = () => {
               Take the hassle out of creating & selling with our free content
               generators.
             </p>
-            <span>
+            <span className={learnmore}>
               <LearnMore />
             </span>
           </div>

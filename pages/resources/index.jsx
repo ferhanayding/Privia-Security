@@ -3,7 +3,6 @@ import Articles from "../../components/articles/Articles";
 import Card from "../../components/card/Card";
 import CarouselArea from "../../components/carouselArea/CarouselArea";
 import CustomHeader from "../../components/customHeader/CustomHeader";
-
 const Recources = () => {
   return (
     <div>

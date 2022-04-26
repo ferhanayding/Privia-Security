@@ -33,10 +33,9 @@ function PrevArrow(props) {
     </button>
   );
 }
-const Sliders = () => {
+const Sliders = ({ info = false }) => {
   const settings = {
     dots: false,
-    infinite: true,
     speed: 500,
     arrows: true,
     slidesToShow: 1,
@@ -48,8 +47,8 @@ const Sliders = () => {
       {
         breakpoint: 950,
         settings: {
-          arrows: false,
           dots: true,
+          arrows: false,
         },
       },
       {
@@ -58,10 +57,10 @@ const Sliders = () => {
           dots: true,
         },
       },
-      {
-        breakpoint: 500,
-        settings: {},
-      },
+      // {
+      //   breakpoint: 500,
+      //   settings: {},
+      // },
     ],
   };
   return (
@@ -98,23 +97,25 @@ const Sliders = () => {
               </div>
             ))}
           </Slider>
-          <div className={info__container}>
-            <div className={info__wrapper}>
-              <img
-                src="/assets/5e8ebf288aa171570fffbd2c_Slack_Monochrome_Black.png"
-                alt=""
-              />
-              <img
-                src="/assets/5dd34dd9740f6157977bb2b2_hubspot-logo-svg-vector 1.png"
-                alt=""
-              />
-              <img src="/assets/Object.png" alt="" />
-              <img
-                src="/assets/5dd34dd9740f61ad787bb2b3_full-logo-white 1.png"
-                alt=""
-              />
+          {info && (
+            <div className={info__container}>
+              <div className={info__wrapper}>
+                <img
+                  src="/assets/5e8ebf288aa171570fffbd2c_Slack_Monochrome_Black.png"
+                  alt=""
+                />
+                <img
+                  src="/assets/5dd34dd9740f6157977bb2b2_hubspot-logo-svg-vector 1.png"
+                  alt=""
+                />
+                <img src="/assets/Object.png" alt="" />
+                <img
+                  src="/assets/5dd34dd9740f61ad787bb2b3_full-logo-white 1.png"
+                  alt=""
+                />
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </>

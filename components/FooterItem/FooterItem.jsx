@@ -7,7 +7,6 @@ import {
   link,
   title__container,
   activeWrapper,
-  pasive,
 } from "../../styles/footerItem.module.scss";
 const FooterItem = ({ title, links, index }) => {
   const [selected, setSelected] = useState(null);
@@ -15,20 +14,13 @@ const FooterItem = ({ title, links, index }) => {
     if (selected == index) {
       return setSelected(null);
     }
-
     setSelected(index);
   };
-  console.log(selected);
   return (
     <div className={container}>
       <div className={title__container} onClick={() => handleClick(index)}>
         <h4 className={name}>{title}</h4>
-        <img
-          src="/assets/ArrowIcon.svg"
-          //   style={{ `${selected == index && animation : "none"}`   }}
-
-          alt=""
-        />
+        <img src="/assets/ArrowIcon.svg" alt="" />
       </div>
       <div className={items__container}>
         <ul

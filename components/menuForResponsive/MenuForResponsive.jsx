@@ -6,7 +6,6 @@ import {
   wrapper,
 } from "../../styles/menuForResponsive.module.scss";
 const MenuForResponsive = ({ menuState, setMenuState }) => {
-  console.log(menuState);
   return (
     <div className={`${container} ${menuState && active}`}>
       <div className={wrapper}>

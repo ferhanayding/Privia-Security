@@ -11,7 +11,7 @@ import Slider from "react-slick/lib/slider";
 
 const Info = () => {
   const settings = {
-    dots: false,
+    dots: true,
     speed: 500,
     arrows: false,
     slidesToShow: 6,
@@ -22,6 +22,7 @@ const Info = () => {
         breakpoint: 1104,
         settings: {
           slidesToShow: 4,
+          dots: true,
         },
       },
       {

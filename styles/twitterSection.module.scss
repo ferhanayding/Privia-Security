@@ -14,6 +14,9 @@
         line-height: 28px;
         letter-spacing: 0px;
         text-align: center;
+        @include mobile {
+          font-size: 20px;
+        }
       }
       h1 {
         font-size: 3rem;
@@ -21,8 +24,19 @@
         line-height: 55px;
         letter-spacing: 0.800000011920929px;
         text-align: center;
-
         margin: 10px 0;
+        @include medium {
+          font-size: 2rem;
+          line-height: 45px;
+        }
+        @include bigMobile {
+          font-size: 1.5rem;
+          line-height: 35px;
+        }
+        @include mobile {
+          font-size: 1rem;
+          line-height: 25px;
+        }
       }
     }
     .center {
@@ -33,7 +47,9 @@
       .card {
         width: 49%;
         margin-bottom: 20px;
-
+        @include mobile {
+          width: 100%;
+        }
         &:nth-child(even) {
           .img__container {
             align-items: flex-start;
@@ -68,6 +84,24 @@
         box-shadow: 0px -2px 0px 0px #0000001f inset;
         color: white;
         background: #5b45e0;
+        @include medium {
+          width: 150px;
+          height: 43px;
+          font-size: 10px;
+          padding: 12px 20px;
+        }
+        @include bigMobile {
+          width: 130px;
+          height: 43px;
+          font-size: 10px;
+          padding: 10px 15px;
+        }
+        @include mobile {
+          width: 120px;
+          height: 43px;
+          font-size: 10px;
+          padding: 8px 12px;
+        }
       }
     }
   }

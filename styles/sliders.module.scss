@@ -26,15 +26,20 @@
         cursor: pointer;
         transition: all 0.5s ease;
         @include medium {
-          display: none;
         }
         &.arrow__next {
           transform: translateY(-50%) rotate(180deg);
-          right: -6rem;
+          right: -5rem;
+          @include medium {
+            display: none;
+          }
         }
         &.arrow__prev {
           transform: translateY(-50%);
-          left: -6rem;
+          left: -5rem;
+          @include medium {
+            display: none;
+          }
         }
         &:hover {
           background: rgba(153, 153, 153, 0.29);
@@ -71,8 +76,8 @@
             line-height: 33px;
           }
           @include mobile {
-            font-size: 14px;
-            line-height: 26px;
+            font-size: 12px;
+            line-height: 22px;
           }
         }
         .user__container {
@@ -84,6 +89,10 @@
             img {
               height: 48px;
               width: 48px;
+              @include bigMobile {
+                height: 30px;
+                width: 30px;
+              }
             }
           }
           .user__info {
@@ -100,13 +109,16 @@
               text-align: left;
               @include medium {
                 font-size: 16px;
+                line-height: 14px;
               }
               @include bigMobile {
                 font-size: 14px;
-                // line-height: 33px;
+                line-height: 10px;
+                // margin-bottom: 10px;
               }
               @include mobile {
-                font-size: 12px;
+                font-size: 10px;
+                line-height: 5px;
               }
             }
             span {
@@ -115,6 +127,16 @@
               line-height: 16px;
               letter-spacing: 0.20000000298023224px;
               text-align: left;
+              @include medium {
+                font-size: 12px;
+              }
+              @include bigMobile {
+                font-size: 10px;
+                // line-height: 33px;
+              }
+              @include mobile {
+                font-size: 8px;
+              }
             }
           }
         }
@@ -122,6 +144,7 @@
     }
     .info__container {
       padding: 5% 5%;
+      margin-top: 30px;
       // background-color: #d1d0d6;
       .info__wrapper {
         display: flex;
@@ -129,6 +152,23 @@
         justify-content: space-between;
         flex-wrap: wrap;
         // background: #333;
+        @include bigMobile {
+          justify-content: center;
+        }
+        img {
+          min-width: 60px;
+          min-height: 20px;
+          @include bigMobile {
+            margin: 10px;
+            height: 30px;
+            width: 80px;
+          }
+          @include bigMobile {
+            // margin: 10px;
+            height: 20px;
+            width: 60px;
+          }
+        }
       }
     }
   }

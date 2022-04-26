@@ -4,6 +4,7 @@
   // background-color: blue;
   padding: 5% 10% 2%;
   //  width: 100vw;
+
   margin-bottom: 50px;
   .wrapper {
     width: 100%;
@@ -86,6 +87,7 @@
     }
     .right {
       flex: 3;
+
       .right__wrapper {
         display: flex;
         justify-content: space-around;
@@ -97,6 +99,8 @@
           display: grid;
           grid-template-columns: 100%;
           margin-left: 20px;
+          height: 20vh;
+          // height: 200px;
         }
       }
     }

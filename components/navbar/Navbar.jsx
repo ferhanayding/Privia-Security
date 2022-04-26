@@ -23,11 +23,11 @@ import {
   hamburger__menu,
   active__item,
 } from "../../styles/navbar.module.scss";
+import { useRouter } from "next/router";
+
 const Navbar = ({ menuState, setMenuState }) => {
-  console.log(menuState);
-  // const f = () => {
-  //   menuState ? console.log("ded") : console.log("dfada");
-  // };
+  const router = useRouter();
+  const pathname = router.pathname == "/";
 
   const [isScrolled, setIsScrolled] = useState();
 
@@ -40,7 +40,6 @@ const Navbar = ({ menuState, setMenuState }) => {
       return closed;
     }
   };
-  console.log(menuState);
   useEffect(() => {
     window.onscroll = () => {
       setIsScrolled(window.pageYOffset === 0 ? false : true);
@@ -77,12 +76,14 @@ const Navbar = ({ menuState, setMenuState }) => {
               onMouseLeave={() => setDropdown(false)}
             >
               <span>Products</span>
-              <img
-                src="/assets/ArrowIcon.svg"
-                className={arrowStatus()}
-                alt="arrow"
-              />
-              {dropdown && (
+              {pathname && (
+                <img
+                  src="/assets/ArrowIcon.svg"
+                  className={arrowStatus()}
+                  alt="arrow"
+                />
+              )}
+              {dropdown && pathname && (
                 <div className={dropdown__menu}>
                   <ul className={drowdown__menu_items}>
                     <li className={drowdown__menu_item}>

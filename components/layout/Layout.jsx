@@ -15,7 +15,7 @@ const Layout = ({ children, menuState, setMenuState }) => {
           rel="stylesheet"
         />
         <meta name="description" content="privia hub" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/assets/favico-150x150.png" />
       </Head>
       <Navbar menuState={menuState} setMenuState={setMenuState} />
       {children}

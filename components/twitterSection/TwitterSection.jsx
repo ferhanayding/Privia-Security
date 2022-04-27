@@ -11,7 +11,7 @@ import {
 import twitterData from "../../dummyData/twitterData.json";
 const TwitterSection = () => {
   const [cards, setCards] = useState([]);
-  // api dan geliyormuş gibi simulasyon...
+  // api dan geliyormuş gibi...
   useEffect(() => {
     setCards(twitterData);
   }, [twitterData]);

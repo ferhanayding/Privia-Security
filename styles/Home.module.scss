@@ -1,6 +1,12 @@
 @import "./app.module.scss";
-.opacity {
-  opacity: 0.3;
-  //   z-index: 3;
-  transition: all 1s ease;
+.slider__container {
+  display: none;
+  @include bigMobile {
+    display: block;
+  }
+}
+.testimonials__container {
+  @include bigMobile {
+    display: none;
+  }
 }

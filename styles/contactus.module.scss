@@ -7,15 +7,16 @@
   justify-content: center;
   align-items: center;
   padding-block: 8%;
+  max-width: 2000px;
+  margin: auto;
   @include medium {
     background: #f5f6f9 !important;
   }
   .wrapper {
-    // background: rgba(0, 0, 0, 0.121);
     width: 60%;
+
     @include medium {
       width: 90%;
-      // background: none;
     }
     height: 80%;
     display: flex;
@@ -25,7 +26,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      // padding-top: 3%;
       p {
         font-size: 20px;
         font-weight: 400;
@@ -52,16 +52,13 @@
       }
       .button {
         text-align: center;
-        // background: blue;
         width: 170px;
         height: 60px;
         background: #5b45e0;
         border: none;
-        // font-size: 1rem;
         border-radius: 0.5rem;
         color: white;
         cursor: pointer;
-        // padding: 3.5% 7%;
         box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.12);
         @include medium {
           width: 150px;

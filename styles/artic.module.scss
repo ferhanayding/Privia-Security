@@ -2,20 +2,23 @@
 .container {
   padding: 0 20%;
   padding-bottom: 10%;
+  @include bigMobile {
+    padding-inline: 10%;
+  }
+  @media screen and (max-width: 547px) {
+    padding-inline: 5%;
+  }
   .wrapper {
+    max-width: 2000px;
+    margin: auto;
     width: 100%;
-    // background: blue;
     .title {
       margin: 50px auto;
-      //   text-align: center;
-      //   background: green;
       width: 100%;
       display: flex;
       justify-content: center;
       p {
         width: 60%;
-        // background: #000;
-        // justify-items: center;
         font-size: 48px;
         font-weight: 700;
         line-height: 55px;
@@ -45,7 +48,7 @@
       display: flex;
       padding: 2%;
       align-items: center;
-      @include bigMobile {
+      @include mobile {
         flex-direction: column;
       }
       &:not(:last-child) {
@@ -56,11 +59,9 @@
         }
       }
       .right {
-        // background-color: #d1d0d6;
         padding: 3%;
         @include bigMobile {
           width: 100%;
-          // background: #000;
           display: flex;
           flex-direction: column;
         }
@@ -102,7 +103,6 @@
           letter-spacing: 0.14000000059604645px;
           text-align: left;
           color: #8e8c95;
-          // background: #000;
           @include medium {
             font-size: 10px;
             line-height: 14px;
@@ -115,7 +115,6 @@
       }
     }
     .bottom {
-      //   background: #000;
       display: flex;
       justify-content: center;
     }

@@ -26,34 +26,42 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
+      @include mobile {
+        align-items: center;
+      }
       span {
         width: 100%;
         color: #232e69;
         text-align: right;
-        font-size: 2rem;
+        font-size: 1.5rem;
+        @include mobile {
+          margin-right: 10px;
+        }
       }
       a {
         border-left: 1px solid #232e69;
-        // background: blue;
-        // padding-left: 10px;
-        // background: blue;
         width: 100%;
         padding: 10px;
         display: flex;
         align-items: center;
+        @include mobile {
+          border: none;
+        }
 
         li {
           width: 100%;
           font-weight: 700;
           font-size: 1rem;
-
           color: #232e69;
-          // background: blue;
           @include mobile {
-            font-size: 0.8rem;
+            text-align: center;
           }
         }
       }
     }
+  }
+  @include mobile {
+    width: 100%;
+    left: -100%;
   }
 }

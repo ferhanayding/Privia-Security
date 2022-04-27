@@ -4,6 +4,7 @@ import {
   items,
   slider,
   sliders,
+  wrapper,
 } from "../../styles/info.module.scss";
 import info from "../../dummyData/info";
 import Head from "next/head";
@@ -56,15 +57,19 @@ const Info = () => {
         />
       </Head>
       <div className={container}>
-        <p>More than 1.8 million people across 50,000 companies choose Oval</p>
-        <div className={items}>
-          <Slider className={sliders} {...settings}>
-            {info.map((item, index) => (
-              <div className={slider}>
-                <img src={item.url} alt="photo" key={index} />
-              </div>
-            ))}
-          </Slider>
+        <div className={wrapper}>
+          <p>
+            More than 1.8 million people across 50,000 companies choose Oval
+          </p>
+          <div className={items}>
+            <Slider className={sliders} {...settings}>
+              {info.map((item, index) => (
+                <div className={slider} key={index}>
+                  <img src={item.url} alt="photo" key={index} />
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
     </>

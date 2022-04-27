@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Analyze from "../components/Analyze/Analyze";
 import Collaborate from "../components/Collaborate/Collaborate";
 import Featured from "../components/featured/Featured";
@@ -9,11 +8,12 @@ import Info from "../components/info/Info";
 import More from "../components/more/More";
 import Pricing from "../components/pricing/Pricing";
 import Testimonails from "../components/testimonails/Testimonails";
-import { useWindowWidth } from "@react-hook/window-size";
 import Sliders from "../components/sliders/Sliders";
-
+import {
+  testimonials__container,
+  slider__container,
+} from "../styles/Home.module.scss";
 export default function Home() {
-  const windowWidth = useWindowWidth();
   return (
     <div>
       <Head>
@@ -34,7 +34,12 @@ export default function Home() {
       <More />
       <Collaborate />
       <Info />
-      {windowWidth < 770 ? <Sliders /> : <Testimonails />}
+      <div className={slider__container}>
+        <Sliders />
+      </div>
+      <div className={testimonials__container}>
+        <Testimonails />
+      </div>
       <Pricing />
       <Hr />
     </div>

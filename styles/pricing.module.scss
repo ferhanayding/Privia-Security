@@ -1,13 +1,18 @@
 @import "./app.module.scss";
 .contianer {
-  padding: 10% 10% 0;
+  padding: 13% 10% 0;
+
   .wrapper {
     width: 100%;
+    max-width: 2000px;
+    margin-inline: auto;
 
     .top {
       width: 60%;
       margin-inline: auto;
-
+      @include medium {
+        width: 100%;
+      }
       h3 {
         font-size: 48px;
         font-weight: 700;
@@ -43,7 +48,6 @@
         align-items: center;
         justify-content: center;
         img {
-          // background: #000;
           @include Tablet {
             width: 60px;
           }
@@ -87,13 +91,11 @@
       display: flex;
       flex-wrap: wrap;
       margin-block: 2% 10%;
-      // background: #000;
       justify-content: space-between;
       @include Tablet {
         justify-content: center;
       }
       .hr {
-        // background: black !important;
         width: 100%;
         height: 2px;
         background-color: black;
@@ -104,7 +106,6 @@
         border-radius: 0.7rem;
         padding: 2%;
         width: 30%;
-        // display: flex;
 
         @include Tablet {
           width: 400px;
@@ -143,9 +144,6 @@
               @include Tablet {
                 font-size: 10px;
               }
-              // @include medium {
-              //   font-size: 10px;
-              // }
             }
           }
           .card__top_bottom {

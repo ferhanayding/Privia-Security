@@ -8,10 +8,11 @@
     padding: 5% 6%;
   }
   .wrapper {
+    max-width: 2000px;
+    margin: auto;
     .item__container {
       @include medium {
         width: 100%;
-        // background: #000;
       }
       button {
         display: flex;
@@ -114,7 +115,6 @@
               @include bigMobile {
                 font-size: 14px;
                 line-height: 10px;
-                // margin-bottom: 10px;
               }
               @include mobile {
                 font-size: 10px;
@@ -132,7 +132,6 @@
               }
               @include bigMobile {
                 font-size: 10px;
-                // line-height: 33px;
               }
               @include mobile {
                 font-size: 8px;
@@ -145,13 +144,11 @@
     .info__container {
       padding: 5% 5%;
       margin-top: 30px;
-      // background-color: #d1d0d6;
       .info__wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        // background: #333;
         @include bigMobile {
           justify-content: center;
         }
@@ -164,7 +161,6 @@
             width: 80px;
           }
           @include bigMobile {
-            // margin: 10px;
             height: 20px;
             width: 60px;
           }

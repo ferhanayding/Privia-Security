@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
     <Layout menuState={menuState} setMenuState={setMenuState}>
       <MenuForResponsive menuState={menuState} setMenuState={setMenuState} />
       <div
-        className={"dee" + (menuState ? " opacity" : "")}
+        className={"main" + (menuState ? " opacity" : "")}
         onClick={handleClick}
       >
         <Component

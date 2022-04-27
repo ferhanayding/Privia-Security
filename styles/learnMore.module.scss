@@ -3,13 +3,10 @@
   display: flex;
   align-items: center;
   font-size: 14px;
-  // background: #333;
   padding: 4px;
   padding-left: 0;
   font-weight: 700;
   line-height: 16px;
-  // letter-spacing: 0px;
-  // text-align: left;
   color: #5b45e0;
   &:hover {
     text-decoration: underline;
@@ -19,7 +16,6 @@
     cursor: pointer;
   }
   img {
-    // transform: rotate(-90deg);
     color: #5b45e0;
   }
 }

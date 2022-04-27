@@ -16,7 +16,7 @@ const Testimonails = () => {
         {testimonials.map((item) => {
           if (item.isHome) {
             return (
-              <div className={card}>
+              <div className={card} key={item.id}>
                 <img src={item.img} alt="" />
                 <p>{item.desc}</p>
                 <div className={user__container}>

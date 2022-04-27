@@ -2,6 +2,8 @@
 .container {
   padding: 5% 10%;
   .wrapper {
+    max-width: 2000px;
+    margin-inline: auto;
     .top {
       margin-bottom: 70px;
 
@@ -33,7 +35,6 @@
         justify-content: space-between;
         flex-wrap: wrap;
         @media screen and (max-width: 652px) {
-          // justify-content: center;
           align-items: center;
           flex-direction: column;
         }
@@ -59,7 +60,6 @@
           }
           .hr {
             height: 4px;
-            // left: 0px;
             margin-block: 12px;
             top: 33px;
             border-radius: 3px;
@@ -88,8 +88,6 @@
                 @include mobile {
                   margin-bottom: 4px;
                 }
-              }
-              &:last-child {
               }
             }
           }

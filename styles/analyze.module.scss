@@ -2,12 +2,12 @@
 .container {
   padding: 10%;
   margin-block: 50px;
-  max-width: 1800px;
   @include Big {
     padding: 5%;
   }
   .wrapper {
-    margin: 0 auto;
+    max-width: 2000px;
+    margin-inline: auto;
     display: flex;
     @include Tablet {
       flex-direction: column;
@@ -16,6 +16,9 @@
     .left {
       flex: 1;
       .img__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         img {
           width: 100%;
           height: 100%;
@@ -35,8 +38,12 @@
           @include Tablet {
             text-align: center;
           }
+          @include medium {
+            font-size: 40px;
+            line-height: 44px;
+          }
           @include mobile {
-            font-size: 34px;
+            font-size: 30px;
             line-height: 45px;
             br {
               display: none;
@@ -52,9 +59,11 @@
           margin-bottom: 0;
           @include Tablet {
             text-align: center;
+            margin-bottom: 20px;
           }
           @include mobile {
-            font-size: 16px;
+            font-size: 14px;
+            line-height: 22px;
             br {
               display: none;
             }
@@ -65,7 +74,6 @@
         margin-top: 30px;
         display: flex;
         align-items: flex-start;
-        // background: blue;
         @include Tablet {
           text-align: center;
           width: 100%;

@@ -4,6 +4,9 @@
   background: url("/assets/pattern.png");
   background-size: 100%;
   padding: 12% 20% 0;
+  @include medium {
+    padding-inline: 10%;
+  }
   .wrapper {
     max-width: 2000px;
     margin: 0 auto;
@@ -30,9 +33,12 @@
         @include medium {
           line-height: 40px;
           font-size: 40px;
+          br {
+            display: none;
+          }
         }
         @include mobile {
-          font-size: 20px;
+          font-size: 30px;
           line-height: 30px;
           margin-top: 30px;
         }
@@ -48,6 +54,9 @@
         @include medium {
           line-height: 20px;
           font-size: 14px;
+          br {
+            display: none;
+          }
         }
         @include mobile {
           font-size: 12px;
@@ -92,7 +101,6 @@
             margin-left: 12px;
             color: #5b45e0;
             background-color: #ffffff;
-            // letter-spacing: 3px;
             @include mobile {
               margin: 0;
               margin-top: 10px;

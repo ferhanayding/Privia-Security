@@ -4,6 +4,8 @@
   padding-top: 5%;
   padding-bottom: 0;
   .wrapper {
+    max-width: 2000px;
+    margin-inline: auto;
     display: flex;
     flex-wrap: wrap;
     .card {
@@ -62,7 +64,6 @@
             text-align: left;
             @include bigMobile {
               font-size: 10px;
-              // line-height: 30px;
             }
           }
         }

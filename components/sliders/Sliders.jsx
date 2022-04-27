@@ -15,7 +15,6 @@ import {
   info__wrapper,
 } from "../../styles/sliders.module.scss";
 import testimonials from "../../dummyData/testimonials";
-// dotsda kLDIN
 function NextArrow(props) {
   const { onClick } = props;
   return (
@@ -57,10 +56,6 @@ const Sliders = ({ info = false }) => {
           dots: true,
         },
       },
-      // {
-      //   breakpoint: 500,
-      //   settings: {},
-      // },
     ],
   };
   return (
@@ -82,7 +77,7 @@ const Sliders = ({ info = false }) => {
         <div className={wrapper}>
           <Slider className={item__container} {...settings}>
             {testimonials.map((item) => (
-              <div className={card}>
+              <div className={card} key={item.id}>
                 <img src={item.img} alt="" />
                 <p>{item.desc}</p>
                 <div className={user__container}>

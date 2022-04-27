@@ -12,6 +12,7 @@ import {
   card__right_container,
   card__title,
   card__desc,
+  title__container,
 } from "../../styles/featured.module.scss";
 import featured from "../../dummyData/featured";
 import SectionTitle from "../sectionTitle/SectionTitle";
@@ -20,7 +21,9 @@ const Featured = () => {
   return (
     <div className={container}>
       <div className={wrapper}>
-        <SectionTitle sectionTitle={"Features"} />
+        <div className={title__container}>
+          <SectionTitle sectionTitle={"Features"} />
+        </div>
         <div className={content}>
           <div className={desc__container}>
             <h3 className={left__desc}>Our solution for your bussiness</h3>
@@ -32,7 +35,7 @@ const Featured = () => {
           </div>
           <div className={cards__container}>
             {featured.map((item) => (
-              <div className={card}>
+              <div className={card} key={item.id}>
                 <div
                   className={image__container}
                   style={{ background: item.bg }}

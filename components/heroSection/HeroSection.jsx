@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import {
   container,
@@ -15,9 +14,6 @@ import {
 const HeroSection = () => {
   return (
     <div className={container}>
-      {/* <div className={container__img}>
-        <img src="/assets/pattern.png" alt="" />
-      </div> */}
       <div className={wrapper}>
         <div className={content}>
           <div className={text_container}>

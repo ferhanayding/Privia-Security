@@ -2,22 +2,19 @@
 .subtitle__container {
   display: flex;
   align-items: center;
-  // background: blue;
   width: 100%;
-  //   background: blue;
+  margin-inline: auto;
+  max-width: 2000px;
   @include Tablet {
     justify-content: center;
-    // display: block;
-    // flex-direction: column;
+
     flex-direction: column-reverse;
   }
   .subtitle__line {
-    // text-align: center;
-    // background: blue;
-
     width: 4rem;
     height: 2px;
     margin-right: 15px;
+    max-width: 200px;
     @include Tablet {
       margin: 0;
       margin-top: 5px;
@@ -26,15 +23,10 @@
     background: #d1d0d6;
   }
   .subtitle__title {
-    // text-align: center;
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
     letter-spacing: 0.4000000059604645px;
-    // text-align: center;
     color: #8e8c95;
-    @include Tablet {
-      // width: 40%;
-    }
   }
 }

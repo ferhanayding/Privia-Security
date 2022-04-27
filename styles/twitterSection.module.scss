@@ -2,6 +2,8 @@
 .container {
   padding: 5% 20%;
   .wrapper {
+    max-width: 2000px;
+    margin: auto;
     .top {
       display: flex;
       flex-direction: column;

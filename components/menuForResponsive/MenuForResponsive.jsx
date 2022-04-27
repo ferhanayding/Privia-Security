@@ -16,11 +16,11 @@ const MenuForResponsive = ({ menuState, setMenuState }) => {
               <li>Home</li>
             </a>
           </Link>
-          <Link href="">
-            <a onClick={() => setMenuState(false)}>
-              <li>About</li>
-            </a>
-          </Link>
+          {/* <Link href="#"> */}
+          <a onClick={() => setMenuState(false)}>
+            <li>About</li>
+          </a>
+          {/* </Link> */}
           <Link href="/pricing">
             <a onClick={() => setMenuState(false)}>
               <li>Pricing</li>
@@ -36,11 +36,11 @@ const MenuForResponsive = ({ menuState, setMenuState }) => {
               <li>Customers</li>
             </a>
           </Link>
-          <Link href={""}>
-            <a onClick={() => setMenuState(false)}>
-              <li>Product</li>
-            </a>
-          </Link>
+          {/* <Link href={"#"}> */}
+          <a onClick={() => setMenuState(false)}>
+            <li>Product</li>
+          </a>
+          {/* </Link> */}
         </ul>
       </div>
     </div>

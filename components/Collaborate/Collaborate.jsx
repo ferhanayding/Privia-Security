@@ -14,7 +14,7 @@ const Collaborate = () => {
     <div className={container}>
       <div className={wrapper}>
         <div className={left}>
-          <img src="/assets/collaborate.png" alt="" />
+          <img src="/assets/Collaborate.png" alt="" />
         </div>
         <div className={right}>
           <div className={top}>

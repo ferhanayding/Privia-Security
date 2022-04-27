@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Analyze from "../components/Analyze/Analyze";
 import Collaborate from "../components/Collaborate/Collaborate";
 import Featured from "../components/featured/Featured";
@@ -16,17 +15,6 @@ import {
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Privia Hub</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Ubuntu:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-        <meta name="description" content="privia hub" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <HeroSection />
       <Featured />
       <Hr />

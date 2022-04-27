@@ -1,7 +1,7 @@
 @import "../styles/colors.scss";
 @import "./app.module.scss";
 .container {
-  background: url("/assets/pattern.png");
+  background: url("/assets/Pattern.png");
   background-size: 100%;
   padding: 12% 20% 0;
   @include medium {

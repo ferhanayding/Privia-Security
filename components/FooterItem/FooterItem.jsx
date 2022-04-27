@@ -11,7 +11,7 @@ import {
 const FooterItem = ({ title, links, index }) => {
   const [selected, setSelected] = useState(null);
   const handleClick = (index) => {
-    if (selected == index) {
+    if (selected === index) {
       return setSelected(null);
     }
     setSelected(index);
@@ -24,7 +24,7 @@ const FooterItem = ({ title, links, index }) => {
       </div>
       <div className={items__container}>
         <ul
-          className={`${items__wrapper} ${selected == index && activeWrapper}`}
+          className={`${items__wrapper} ${selected === index && activeWrapper}`}
         >
           {links.map((item, i) => (
             <li className={link} key={i}>

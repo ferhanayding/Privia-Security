@@ -25,7 +25,7 @@
     }
     .right {
       flex: 1;
-      @media screen and (max-width: 1200px) {
+      @media screen and (min-width: 1200px) {
         margin-left: 30px;
       }
       @include Tablet {
